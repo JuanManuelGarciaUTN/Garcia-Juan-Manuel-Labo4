@@ -6,19 +6,19 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Primera-App-Angular-UTN';
-  tituloNuevo = "";
-  numeroUno:number = 0;
-  numeroDos:number = 0;
-  resultado:number = 0;
+  edadUno:number = 0;
+  edadDos:number = 0;
+  suma:number = 0;
+  promedio:number = 0;
 
-  cambiarTitutlo(){
-    this.title = this.tituloNuevo;
-    this.tituloNuevo = "";
-  };
-
-  sumar(){
-    //this.resultado = Number(this.numeroUno) + Number(this.numeroDos);
-    this.resultado = this.numeroUno + this.numeroDos;
+  calcular(){
+    this.suma = this.edadUno + this.edadDos;
+    this.promedio = this.suma / 2;
+  }
+  limpiar(){
+    this.edadUno = 0;
+    this.edadDos = 0;
+    this.suma = 0;
+    this.promedio = 0;
   }
 }
