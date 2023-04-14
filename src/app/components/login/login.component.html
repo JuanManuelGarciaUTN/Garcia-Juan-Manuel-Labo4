@@ -1,0 +1,7 @@
+<p>Nombre</p>
+<input [(ngModel)]="nombre" type="text">
+<p>Contraseña</p>
+<input [(ngModel)]="clave" type="text">
+<button (click)="Logear()">LOGIN</button>
+<button (click)="Registrar()">Registrarse</button>
+<p *ngIf="error">Autentificación Invalida</p>

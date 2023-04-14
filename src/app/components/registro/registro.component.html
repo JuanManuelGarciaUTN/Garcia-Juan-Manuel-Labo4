@@ -1,0 +1,8 @@
+<p>Nombre</p>
+<input [(ngModel)]="nombre" type="text">
+<p>Contraseña</p>
+<input [(ngModel)]="clave" type="text">
+<p>Repita la Contraseña</p>
+<input [(ngModel)]="claveRepetida" type="text">
+<button (click)="Registrar()">Registrarse</button>
+<p *ngIf="mensajeDeError">{{mensajeDeError}}</p>
