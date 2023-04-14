@@ -1,8 +1,12 @@
-<p>Nombre</p>
-<input [(ngModel)]="nombre" type="text">
-<p>Contraseña</p>
-<input [(ngModel)]="clave" type="text">
-<p>Repita la Contraseña</p>
-<input [(ngModel)]="claveRepetida" type="text">
-<button (click)="Registrar()">Registrarse</button>
-<p *ngIf="mensajeDeError">{{mensajeDeError}}</p>
+<div class="get-started" id="login-screen">
+    <p>
+        <span class="material-icons" id="login-logo">
+            Registro
+        </span>
+    </p>
+    <input [(ngModel)]="nombre" type="text" class="login-form" placeholder="Nombre">
+    <input [(ngModel)]="clave" type="text" class="login-form" placeholder="Clave">
+    <input [(ngModel)]="claveRepetida" type="text" class="login-form" placeholder="Reingrese la Clave">
+    <button (click)="Registrar()" class="registro-btn">Registrarse</button>
+    <p *ngIf="mensajeDeError">{{mensajeDeError}}</p>
+</div>

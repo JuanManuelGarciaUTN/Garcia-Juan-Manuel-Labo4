@@ -1,7 +1,12 @@
-<p>Nombre</p>
-<input [(ngModel)]="nombre" type="text">
-<p>Contraseña</p>
-<input [(ngModel)]="clave" type="text">
-<button (click)="Logear()">LOGIN</button>
-<button (click)="Registrar()">Registrarse</button>
-<p *ngIf="error">Autentificación Invalida</p>
+<div class="get-started" id="login-screen">
+    <p>
+        <span class="material-icons" id="login-logo">
+            Bienvenido
+        </span>
+    </p>
+    <input [(ngModel)]="nombre" type="text" class="login-form" placeholder="Nombre">
+    <input [(ngModel)]="clave" type="text" class="login-form" placeholder="Clave">
+    <button (click)="Logear()" class="login-btn">LOGIN</button>
+    <button (click)="Registrar()" class="registro-btn">Registrarse</button>
+    <p *ngIf="error">Autentificación Invalida</p>
+</div>
